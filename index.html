@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>想要 · 静态页面总览</title>
+<style>
+  :root{
+    --paper:#FBF5EE;
+    --surface:#FFFFFF;
+    --ink:#3F342E;
+    --ink-2:#6B5A52;
+    --muted:#A8978F;
+    --line:#F1E5D9;
+    --line-2:#E9D9C8;
+    --seal:#C96B77;
+    --seal-soft:#FBDADC;
+    --moss:#7DA477;
+    --moss-soft:#DCEBD6;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  svg{display:block}
+  .ic{stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .wrap{max-width:860px;margin:0 auto;padding:44px 22px 80px}
+  .brand{display:flex;align-items:center;gap:9px;margin-bottom:24px}
+  .mark{width:28px;height:28px;border-radius:7px;background:var(--seal);color:#fff;display:flex;align-items:center;justify-content:center}
+  .mark .ic{stroke-width:1.8}
+  .bname{font-size:12.5px;font-weight:600;letter-spacing:.2em;color:var(--ink-2)}
+  h1{font-size:25px;margin:0 0 10px;letter-spacing:-.015em;line-height:1.35;font-weight:600}
+  h1 em{font-style:normal;color:var(--seal)}
+  .sub{font-size:13px;color:var(--muted);line-height:1.85;margin:0 0 32px}
+  .list{display:grid;gap:10px}
+  a.card{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px;transition:border-color .18s, box-shadow .18s, transform .18s;position:relative}
+  a.card:hover{border-color:var(--line-2);box-shadow:0 8px 22px rgba(90,65,50,.1);transform:translateY(-1px)}
+  .card .top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+  .card .ib{width:36px;height:36px;border-radius:8px;flex:0 0 auto;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--ink-2)}
+  .card .tt{font-size:15px;font-weight:600;letter-spacing:-.01em;margin:0 0 4px}
+  .card .file{font-size:10.5px;color:#B7ACA4;font-family:ui-monospace,Menlo,monospace}
+  .card .ds{font-size:12.5px;color:var(--muted);line-height:1.8;margin:0}
+  .card .arr{position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--line-2)}
+  .badge{font-size:9.5px;padding:2px 7px;border-radius:4px;margin-left:7px;background:var(--moss-soft);color:var(--moss);vertical-align:middle;font-weight:500}
+  .how{margin-top:30px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px 22px}
+  .how h2{font-size:13.5px;margin:0 0 16px;letter-spacing:-.01em;font-weight:600;display:flex;align-items:center;gap:8px}
+  .how h2 .ic{color:var(--line-2)}
+  .step{display:flex;gap:12px;margin-bottom:14px}
+  .step:last-child{margin-bottom:0}
+  .num{width:18px;height:18px;border-radius:50%;flex:0 0 auto;background:var(--seal-soft);color:var(--seal);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600;margin-top:3px;font-variant-numeric:tabular-nums}
+  .step p{font-size:12.5px;color:var(--ink-2);line-height:1.8;margin:0}
+  .step p b{color:var(--ink);font-weight:600}
+  .step p span{color:var(--muted)}
+  .foot{margin-top:30px;font-size:11px;color:#B7ACA4;line-height:1.95;text-align:center}
+  .foot b{color:var(--muted);font-weight:500}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="mark"><svg class="ic" width="15" height="15" viewBox="0 0 24 24"><path d="M12 3.5 19 7v5.2c0 4-2.9 7.2-7 8.3-4.1-1.1-7-4.3-7-8.3V7z"/><path d="M9 12.2l2.2 2.2 4-4.2"/></svg></div>
+    <div class="bname">想要</div>
+  </div>
+
+  <h1>静态页面总览<br><em>4 个页面，一套完整原型</em></h1>
+  <p class="sub">「她想要 → 别人买单 → 她拿佣金」的完整演示。<br>全部单文件，不联网、不依赖，直接打开或发到微信里。</p>
+
+  <div class="list">
+    <a class="card" href="her-shop.html">
+      <div class="top">
+        <div class="ib"><svg class="ic" width="19" height="19" viewBox="0 0 24 24"><rect x="5" y="3.8" width="14" height="16.4" rx="1.6"/><path d="M8.6 8.4h6.8"/><path d="M8.6 12h6.8"/><path d="M8.6 15.6h4"/></svg></div>
+        <div><p class="tt">主应用 · 她的后台 + 他的视角<span class="badge">核心</span></p><p class="file">her-shop.html</p></div>
+      </div>
+      <p class="ds">挑商品 → 生成链接 → 他打开看到「小雨想要的，都在这里了」→ 下单 → 她后台看到佣金到账。含等级进度、收货地址设置、收款账号设置。</p>
+      <div class="arr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h13"/><path d="M13.2 7.2 18 12l-4.8 4.8"/></svg></div>
+    </a>
+
+    <a class="card" href="posters.html">
+      <div class="top">
+        <div class="ib"><svg class="ic" width="19" height="19" viewBox="0 0 24 24"><rect x="4.4" y="5.4" width="15.2" height="13.2" rx="1.2"/><path d="M5.8 15.4l3.5-3.5 3 3 2.5-2.5 3.6 3.6"/><circle cx="9.1" cy="9.2" r="1.1"/></svg></div>
+        <div><p class="tt">宣传长图 · 15 张海报<span class="badge">传播层</span></p><p class="file">posters.html</p></div>
+      </div>
+      <p class="ds">14 张单品 + 1 张整店主海报。做成一撕两半的票券，发朋友圈、发群、存相册都不会被封。</p>
+      <div class="arr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h13"/><path d="M13.2 7.2 18 12l-4.8 4.8"/></svg></div>
+    </a>
+
+    <a class="card" href="legal.html">
+      <div class="top">
+        <div class="ib"><svg class="ic" width="19" height="19" viewBox="0 0 24 24"><path d="M6.4 3.6h7l4.6 4.6v11.2a1 1 0 0 1-1 1H6.4a1 1 0 0 1-1-1V4.6a1 1 0 0 1 1-1z"/><path d="M13.4 3.6v4.6h4.6"/><path d="M8.2 13h5"/><path d="M8.2 16.4h3"/></svg></div>
+        <div><p class="tt">协议与隐私<span class="badge">上线必备</span></p><p class="file">legal.html</p></div>
+      </div>
+      <p class="ds">用户协议 / 隐私政策 / 推广服务协议。写清了「平台是卖方、她拿的是推广费、地址不展示给下单人」。</p>
+      <div class="arr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24"><path d="M5 12h13"/><path d="M13.2 7.2 18 12l-4.8 4.8"/></svg></div>
+    </a>
+  </div>
+
+  <div class="how">
+    <h2><svg class="ic" width="14" height="14" viewBox="0 0 24 24"><path d="M4 16.4 9.6 10l3.6 3.2L20 5.6"/><path d="M15.4 5.6H20v4.4"/></svg>怎么演示 · 40 秒</h2>
+    <div class="step"><div class="num">1</div><p>打开<b>主应用</b>，在「我的清单」挑几件，点<b>「把清单发出去」</b></p></div>
+    <div class="step"><div class="num">2</div><p>弹层里点<b>「用他的视角打开」</b>，你会看到「小雨想要的，都在这里了」<span>——整页没有一处提到店、佣金、赚钱</span></p></div>
+    <div class="step"><div class="num">3</div><p>随便点一件「就买这个」，付款成功后点<b>「回到她的后台」</b></p></div>
+    <div class="step"><div class="num">4</div><p>收益页跳出来：<b>余额变了、进度条满了、等级升了</b><span>——这才是她要的东西</span></p></div>
+    <div class="step"><div class="num">5</div><p>切到<b>「我的」</b>，里面有<b>收货地址</b>和<b>收款账号</b>两个设置页</p></div>
+  </div>
+
+  <div class="foot">
+    <b>原型说明</b>　全部为静态演示，没有真实支付、没有后端<br>
+    正式上线需要：营业执照（个体户即可）→ 微信支付商户号 → 认证服务号 → 域名 ICP 备案<br>
+    协议内容为结构示意，上线前须由执业律师重写
+  </div>
+</div>
+</body>
+</html>
