@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>协议与隐私 · 想要</title>
+<style>
+  :root{
+    --ink:#3F342E;
+    --muted:#A8978F;
+    --line:#F1E5D9;
+    --brand:#C96B77;
+    --bg:#FBF5EE;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.85;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:38px 22px 80px}
+
+  .brand{display:flex;align-items:center;gap:8px;margin-bottom:26px}
+  .mark{
+    width:26px;height:26px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(140deg,#F2879B,#DE5B72);color:#fff;font-size:12px;font-weight:700;
+  }
+  .bname{font-size:12.5px;font-weight:600;letter-spacing:.16em;color:#5B4F48}
+
+  h1{font-size:22px;margin:0 0 6px;letter-spacing:-.02em}
+  .meta{font-size:11.5px;color:var(--muted);margin:0 0 26px}
+
+  .tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+  .tab{
+    font-size:12.5px;padding:7px 15px;border-radius:20px;background:#fff;
+    color:#6B6059;border:1px solid var(--line);cursor:pointer;transition:.2s;
+  }
+  .tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+  h2{font-size:15px;margin:30px 0 10px;letter-spacing:-.01em}
+  h2:first-of-type{margin-top:0}
+  p{font-size:13px;color:#4A423D;margin:0 0 11px}
+  ul{font-size:13px;color:#4A423D;margin:0 0 12px;padding-left:20px}
+  li{margin-bottom:6px}
+  b{color:var(--ink)}
+  .hl{
+    background:#FBDADC;border-left:3px solid var(--brand);border-radius:0 14px 14px 0;
+    padding:12px 15px;margin:0 0 16px;font-size:12.5px;color:#7A5A62;
+  }
+  .foot{
+    margin-top:44px;padding-top:22px;border-top:1px solid var(--line);
+    font-size:11px;color:#B0A399;line-height:1.9;
+  }
+  .foot b{color:#8B7F78}
+  .doc{display:none}
+  .doc.on{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand"><span class="mark">想</span><span class="bname">想要</span></div>
+
+  <h1>协议与隐私</h1>
+  <p class="meta">生效日期：2026 年 11 月 24 日 · 版本 v1.0</p>
+
+  <div class="tabs">
+    <div class="tab on" onclick="show('terms',this)">用户协议</div>
+    <div class="tab" onclick="show('privacy',this)">隐私政策</div>
+    <div class="tab" onclick="show('promo',this)">推广服务协议</div>
+  </div>
+
+  <div class="doc on" id="terms">
+    <h2>一、服务内容</h2>
+    <p>「想要」是一个礼品清单与实物礼品销售平台。用户可在平台创建清单、挑选商品，并将清单链接分享给他人；他人可通过该链接购买清单中的商品，由平台统一发货至清单创建人填写的收货地址。</p>
+    <p><b>平台是商品的销售方</b>，负责商品的生产、印刷、发货、开票与售后。清单创建人不是销售方，不承担商品质量、发货与售后责任。</p>
+
+    <h2>二、下单与支付</h2>
+    <ul>
+      <li>订单价格以下单页面展示为准，含税。</li>
+      <li>支付通过微信支付等持牌支付机构完成，<b>平台不代收、不归集任何个人之间的资金</b>。</li>
+      <li>下单成功后，平台将在页面标注的时效内发货。</li>
+    </ul>
+
+    <h2>三、收货与售后</h2>
+    <ul>
+      <li>收货地址由清单创建人自行填写并确认，下单人无需填写。</li>
+      <li>实物商品支持签收后 <b>7 天无理由退货</b>，定制类商品（含定制印刷、装裱）因其唯一性，<b>不支持无理由退货</b>，但质量问题可免费重做或退款。</li>
+      <li>如商品存在破损、错印、缺件，请在签收后 48 小时内联系客服，凭照片处理。</li>
+    </ul>
+
+    <h2>四、用户行为规范</h2>
+    <p>用户不得利用本平台从事下列行为：发布违法违规内容；冒用他人身份或地址；以虚构交易方式套取佣金；将平台用于赌博、色情、诈骗等非法用途。一经发现，平台有权冻结账户、扣留违规所得并保留追究法律责任的权利。</p>
+
+    <h2>五、未成年人</h2>
+    <p>未满 18 周岁的用户应在监护人指导下使用本服务。未满 8 周岁的未成年人不得单独下单。监护人可联系客服申请退款。</p>
+
+    <h2>六、协议变更</h2>
+    <p>平台可根据业务调整修订本协议，修订后将在页面公示。用户继续使用即视为接受修订内容。</p>
+  </div>
+
+  <div class="doc" id="privacy">
+    <div class="hl">
+      一句话版本：<b>你的收货地址只用于发货，不会展示给下单的人，也不会卖给任何第三方。</b>
+    </div>
+
+    <h2>一、我们收集什么</h2>
+    <ul>
+      <li><b>账号信息</b>：手机号、昵称、头像（用于登录与展示）。</li>
+      <li><b>收货信息</b>：收件人姓名、手机号、详细地址（<b>仅用于发货</b>）。</li>
+      <li><b>订单信息</b>：商品、金额、下单时间、物流单号。</li>
+      <li><b>推广信息</b>：佣金记录、结算账户（用于支付推广服务费）。</li>
+    </ul>
+    <p>我们<b>不收集</b>你的通讯录、位置轨迹、相册内容、聊天记录。</p>
+
+    <h2>二、地址为什么不给下单的人看</h2>
+    <p>下单人在结算页面只能看到"寄给小雨"，看不到具体地址与手机号。地址在平台内部流转至仓库发货，属于平台与清单创建人之间的信息，不向下单人披露。这是本产品的核心隐私设计。</p>
+
+    <h2>三、信息如何使用</h2>
+    <ul>
+      <li>发货、物流跟踪、售后处理；</li>
+      <li>佣金结算与个税代扣代缴；</li>
+      <li>纠纷处理与合规审计。</li>
+    </ul>
+    <p>除法律法规要求或司法机关依法调取外，我们不会向第三方提供你的个人信息。物流承运商仅可获得完成配送所必需的最小信息。</p>
+
+    <h2>四、存储与删除</h2>
+    <p>数据存储于中国境内。订单与佣金记录依《电子商务法》保存不少于 3 年。你可以申请删除账号，我们将在 15 个工作日内删除或匿名化处理非必需保留的信息。</p>
+
+    <h2>五、你的权利</h2>
+    <p>依据《个人信息保护法》，你有权查阅、更正、复制、删除你的个人信息，有权撤回授权。请通过页面底部客服入口联系我们。</p>
+  </div>
+
+  <div class="doc" id="promo">
+    <div class="hl">
+      这是"她能拿到钱"的法律基础：<b>她拿的是推广服务费，不是商品货款。</b>
+    </div>
+
+    <h2>一、合作性质</h2>
+    <p>乙方（推广方）以自身社交关系为甲方（平台）的商品进行推广。甲方是商品的销售方与履约方，乙方是推广服务提供方。<b>双方为推广合作关系，不构成代理、雇佣、合伙或经销关系。</b></p>
+
+    <h2>二、佣金计算</h2>
+    <ul>
+      <li>佣金 = 商品成交价 × 品类费率 + 等级加成。</li>
+      <li>当前费率：电子卡 78%、实体卡 78%、印刷品 78%、花礼 45%。</li>
+      <li>等级加成：铜牌 +¥0、银牌 +¥3/单、金牌 +¥6/单。</li>
+      <li>费率调整将提前 7 日在后台公示，已成交订单按成交时费率结算。</li>
+    </ul>
+
+    <h2>三、结算与提现</h2>
+    <ul>
+      <li>订单签收且过 7 天售后期后，佣金转为可提现余额。</li>
+      <li>提现至微信零钱，无门槛，T+1 到账。</li>
+      <li>佣金属于<b>劳务报酬所得</b>，甲方依法代扣代缴个人所得税，并在后台提供完税凭证。</li>
+    </ul>
+
+    <h2>四、合规底线</h2>
+    <ul>
+      <li>乙方不得虚构交易、自买自卖、刷单套取佣金。</li>
+      <li>乙方不得以"返现""投资""代理费""拉人头"等方式发展下级或收取费用。</li>
+      <li>乙方不得承诺收益、不得以任何形式向他人收取加入费用。</li>
+      <li>违反上述任一条，甲方有权冻结佣金并终止合作。</li>
+    </ul>
+
+    <h2>五、责任划分</h2>
+    <p>商品质量、发货时效、退换货由甲方承担；乙方不对买家承担商品责任，亦不承担货款风险。乙方因虚假宣传、私自承诺引发的纠纷，由乙方自行承担。</p>
+  </div>
+
+  <div class="foot">
+    <b>关于这份文档</b><br>
+    以上为产品原型的协议框架，用于说明业务结构（平台自营、推广佣金、地址隐私）。<br>
+    正式上线前必须由执业律师按实际主体、类目与结算方式重写，并向当地市场监管部门确认经营范围。<br>
+    页面底部须公示：ICP 备案号、营业执照、用户协议、隐私政策、退换货规则、投诉渠道。
+  </div>
+
+</div>
+
+<script>
+function show(id, node){
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('on'));
+  node.classList.add('on');
+  document.querySelectorAll('.doc').forEach(d => d.classList.toggle('on', d.id === id));
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+</script>
+</body>
+</html>
